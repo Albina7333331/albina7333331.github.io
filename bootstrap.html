@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
    
-    <script src="jquery-3.7.1.min.js" ></script>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,8 +70,14 @@
           <div class="card-body">
             <a href="senior.html"><h5 class="card-title">У нас выпускной</h5></a>
           <p class="card-text">Платье макси с фигурным силуэтом в алом цвете</p>
-          <a href="smartbasket" class="btn btn-primary">Купить</a>
-          </div>
+          <a href="#" class="btn btn-primary"
+              data-sb-id-or-vendor-code="артикул"
+              data-sb-product-name="Название товара"
+              data-sb-product-price="Цена"
+              data-sb-product-quantity="1"
+              data-sb-product-img="/img_resized/141.jpg"
+                    >Купить</a>
+               </div>
           </div>
         
           <div class="card" style="width: 18rem;">
@@ -227,7 +233,7 @@
 	<script>
 		$(function () {
 			$('.smart-basket__wrapper').smbasket({
-				productElement: 'card',
+				productElement: 'card-body',
 				buttonAddToBasket: 'btn btn-primary',
 				productPrice: 'product__price-number',
 				productSize: 'product__size-element',
@@ -247,6 +253,6 @@
 			});
 		});
 	</script>
-
+  <script src="jquery-3.7.1.min.js" ></script>
   </body>
 </html>

@@ -44,7 +44,7 @@
 	<a class="тут ваш класс" 
 
 
-                    data-sb-id-or-vendor-code="артикул"
+  data-sb-id-or-vendor-code="артикул"
   data-sb-product-name="Название товара"
   data-sb-product-price="Цена"
   data-sb-product-quantity="1"
