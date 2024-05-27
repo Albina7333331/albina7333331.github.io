@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+   
+    <script src="jquery-3.7.1.min.js" ></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +12,7 @@
 
     <title>Hello, world!</title>
     <link rel="stylesheet" href="style.css">
+   
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-background">
@@ -67,7 +70,7 @@
           <div class="card-body">
             <a href="senior.html"><h5 class="card-title">У нас выпускной</h5></a>
           <p class="card-text">Платье макси с фигурным силуэтом в алом цвете</p>
-          <a href="#" class="btn btn-primary">Купить</a>
+          <a href="smartbasket" class="btn btn-primary">Купить</a>
           </div>
           </div>
         
@@ -132,7 +135,7 @@
               <a href="img/50.jpg"><img src="img_resized/511.jpg" class="card-img-top" alt="тут картинка"></a>
             <div class="card-body">
               <a href="baby.html"><h5 class="card-title">В ожидании чуда</h5></a>
-            <p class="card-text">Платье макси в коричневом оттенке</p>
+            <p class="card-text">Платье миди в шотландскую клетку</p>
             <a href="#" class="btn btn-primary">Купить</a>
             </div>
             </div>
@@ -212,5 +215,38 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <div class="smart-basket__wrapper"></div>
+    <script src="/home/alla/Документы/HTML/Diplom/Albina7333331.github.io/smartbasket/js"></script>
+    
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'card',
+				buttonAddToBasket: 'btn btn-primary',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'класс корзины',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://artstranger.ru/privacy.html',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
+
   </body>
 </html>
