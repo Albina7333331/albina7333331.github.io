@@ -34,7 +34,9 @@
    color: rgb(189, 14, 160); /* Цвет текста */
   }
 
-
+.card-body {
+  background-color: hsl(174, 56%, 96%);
+}
 
 
 .text-color {
@@ -53,6 +55,6 @@
     gap: 32px;
     flex-wrap: wrap;
 }
-.btn {
+.btn-primary {
     animation: rotate-scale-up 0.65s linear both;
 }
