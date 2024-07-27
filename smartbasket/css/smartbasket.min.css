@@ -25,11 +25,12 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.smart-basket {
+
+.smart-basket {    
     font: 400 16px 'Exo 2', 'Open Sans', sans-serif;
     width: 100%;
     font-size: 16px;
-    padding: 30px 0;
+    padding: 30px;
     position: fixed;
     top: -25000px;
     background: #fff;
