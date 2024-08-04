@@ -29,11 +29,26 @@
     }
   }
 
- 
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+
   a {
    color: rgb(189, 14, 160); /* Цвет текста */
   }
 
+  a:hover {
+
+    color: orange;
+    
+    }
+
+    a:active {
+
+      color: red;
+      
+      }
+      
 .card-body {
   background-color: hsl(174, 56%, 96%);
 }
@@ -59,4 +74,27 @@
 }
 .btn-primary {
     animation: rotate-scale-up 0.65s linear both;
+}
+
+.h1{
+  margin-top: 30px;
+  padding-left: 0%;
+  margin-bottom: 30px;
+  color: rgba(0, 110, 255, 0.918);
+}
+ .card_sale{
+  position: relative;
+} 
+.card_sale::after{
+  content: "Новинка";
+  width: 35px;
+  background-color: dark;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
 }
