@@ -1,92 +1,170 @@
-
-
- @-webkit-keyframes rotate-scale-up {
-    0% {
-      -webkit-transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
-    }
-    50% {
-      -webkit-transform: scale(2) rotateZ(180deg);
-              transform: scale(2) rotateZ(180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
-    }
-  }
-  @keyframes rotate-scale-up {
-    0% {
-      -webkit-transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
-    }
-    50% {
-      -webkit-transform: scale(2) rotateZ(180deg);
-              transform: scale(2) rotateZ(180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
-    }
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
 
-  body {
-    font-family: 'Roboto', Arial, sans-serif;
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
 
-  a {
-   color: rgb(189, 14, 160); /* Цвет текста */
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
 
-  a:hover {
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
 
-    color: orange;
-    
-    }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 
-    a:active {
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
 
-      color: red;
-      
-      }
-      
+.btn-outline-success {
+  color: #e2ebe7;
+  border-color: #e2ebe7;
+}
+
+a {
+  color: rgb(189, 14, 160);
+  /* Цвет текста */
+  text-decoration: none;
+}
+
+
+a:hover {
+
+  color: orange;
+
+}
+
+a:active {
+
+  color: red;
+
+}
+
 .card-body {
   background-color: hsl(174, 56%, 96%);
 }
 
 
+.card-title {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .text-color {
-    color:red;
+  color: red;
 }
 
 .nav-background {
-    background-color: darkgray;
+  background-color: darkgray;
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-}
-.product-box{
-    gap: 32px;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-}
-.btn-primary {
-    animation: rotate-scale-up 0.65s linear both;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
-.h1{
+.product-box {
+  gap: 31px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+.audio{
+  width: 650px;
+}
+.relax{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.h_music{
+  /* padding-top: 50px; */
+  /* padding-left: 100px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 50px;
+  gap:30px;
+  align-items: center;
+}
+.frame_video{
+  width: 75vw;
+  height: 415px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin: 150px;
+}
+
+
+
+
+
+.nav-link{
+
+  color: white;
+}
+.card-subtitle {
+  padding-top: 50px;
+}
+
+.btn-primary {
+  animation: rotate-scale-up 0.65s linear both;
+  
+
+}
+
+
+
+.h1 {
   margin-top: 30px;
   padding-left: 0%;
   margin-bottom: 30px;
   color: rgba(0, 110, 255, 0.918);
 }
- .card_sale{
+
+.card_sale {
   position: relative;
+  box-shadow: 1px 3px 10px rgb(228, 243, 11);
+
 } 
-.card_sale::after{
+
+
+.card_sale::after {
   content: "Новинка";
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
   width: 35px;
   background-color: dark;
   color: white;
@@ -96,5 +174,156 @@
   position: absolute;
   top: 8px;
   right: 8px;
+ 
+}
+
+
+
+
+/* Стили навигационных кнопок */
+.navigation .nav {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.navigation .prev {
+  left: 10px;
+  background-image: url('prev-arrow.png');
+  /* Иконка стрелки назад */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navigation .next {
+  right: 10px;
+  background-image: url('next-arrow.png');
+  /* Иконка стрелки вперед */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Управление отображением навигационных кнопок */
+#slide1:checked~.navigation label.prev[for="slide3"],
+#slide2:checked~.navigation label.prev[for="slide1"],
+#slide3:checked~.navigation label.prev[for="slide2"],
+#slide1:checked~.navigation label.next[for="slide2"],
+#slide2:checked~.navigation label.next[for="slide3"],
+#slide3:checked~.navigation label.next[for="slide1"] {
+  display: block;
+}
+
+.navigation label {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* Ширина слайдера */
+  height: 400px;
+  /* Высота слайдера */
+  margin: auto;
+  overflow: hidden;
+  /* object-fit: cover; */
+}
+
+.slides {
+  display: flex;
+  width: 50vw;
+  height: 80vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 50vw;
+  height: 60vh;
+  object-fit: cover;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Управление отображением слайдов */
+#slide1:checked~.slides {
+  transform: translateX(0);
+}
+
+#slide2:checked~.slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked~.slides {
+  transform: translateX(-200%);
+}
+
+#slide3:checked~.slides {
+  transform: translateX(-300%);
+}
+
+.black_band {
+  height: 179px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+
+}
+
+.text_brand {
+  font-family: Lato;
+  font-size: 17px;
+
+  /* line-height: 50px; */
+  /* font-weight: 400; */
+  line-height: 19.2px;
+  text-align: left;
+  padding-left: 32px;
+  color: #fbfbfb;
+  background: #222224;
+  padding-top: 24px;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.logo {
+  /* height: 32px; */
+  left: 1222px;
+  gap: 8px;
+  opacity: 0px;
+  background: #222224;
+  display: flex;
+  justify-content: end;
+  padding-top: 52px;
+  padding-bottom: 23px;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.logo1 {
+  width: 31.45px;
+  height: 32px;
+  top: 6402px;
+  left: 152px;
+  gap: 0px;
+  opacity: 0px;
+  /* position: top; */
+  /* padding-left: 34px; */
 
 }

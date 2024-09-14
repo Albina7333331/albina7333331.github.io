@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Нарядные платья на любой случай</title>
+  <title>Women's stories</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="address.html"></a>
-     
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,23 +33,19 @@
             <a class="nav-link active" aria-current="page" href="#">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Каталог</a>
+            <a class="nav-link active" href="catalog.html">Каталог</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Полезное
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Статьи по теме</a>
 
-                <li><a href="#specifications">Видео о новинках сезона</a></li>
-              <!-- <li><a href="Музыкальный раздел сайта">Статьи по теме</a></li> -->
-            <!-- </li> -->
 
-
-
-              <li><a class="dropdown-item" href="#">Релаксирующий раздел/a></li>
+              <li><a href="#specifications">Видео о новинках сезона</a></li>
+              <li><a class="dropdown-item" href="#specifications">Релаксирующий раздел</a></li>
 
               <li>
                 <hr class="dropdown-divider">
@@ -59,10 +55,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link disabled"></a>
-          </li> 
+          </li>
         </ul>
         <div class="smart-basket__wrapper"></div>
-       
+
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -72,7 +68,7 @@
     </div>
   </nav>
   <div class="center mt-3 mb-3">
-    <p class="h1">DRESSMODA</p>
+    <p class="h1">women's stories</p>
   </div>
   <nav class="container" aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -82,14 +78,72 @@
     </ol>
   </nav>
 
+
+
+
+
+  <div class="slider">
+    <!-- Слайды -->
+    <div class="slides">
+      <div class="slide s1">
+        <img src="img/news.jpg" alt="Image 1">
+      </div>
+      <div class="slide s2">
+        <img src="img/news2.jpeg"" alt=" Image 2">
+      </div>
+      <div class="slide s3">
+        <img src="img/news3.jpeg" alt="Image 3">
+      </div>
+
+      <div class="slide s4">
+        <img src="img/news5.jpeg" alt="Image 5">
+      </div>
+    </div>
+
+    <!-- Кнопки навигации -->
+    <div class="navigation">
+      <div class="nav prev"><img src="img/slider2.svg" alt="slider"></div>
+      <div class="nav next"><img src="img/slider.svg" alt="slider"></div>
+    </div>
+  </div>
+  <script>
+    const slides = document.querySelector('.slides');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      if (index >= totalSlides) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } else {
+        currentIndex = index;
+      }
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      showSlide(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      showSlide(currentIndex + 1);
+    });
+
+  </script>
+
+
   <div class="product-box container d-flex justify-content-between mt-5">
-    <div class="card" style="width: 18rem;">
+
+    <div class="card" style="width: 21rem;">
       <a href="1.html"><img src="img_resized/141.jpg" class="card-img-top" alt="тут картинка"></a>
       <div class="card-body">
         <a href="senior.html">
           <h5 class="card-title">У нас выпускной</h5>
         </a>
-
         <p class="card-text">Платье макси с фигурным силуэтом в алом цвете</p>
         <a href="#" <a class="btn-primary" data-sb-id-or-vendor-code="4226070500" data-sb-product-name="Платье макси"
           data-sb-product-price="5500" data-sb-product-quantity="1" data-sb-product-img="img_resized/141.jpg"
@@ -97,24 +151,24 @@
       </div>
     </div>
 
-    <div class="card_sale" style="width: 18rem;">
+    <div class="card_sale" style="width: 21rem;">
       <a href="2.html"><img src="img_resized/171.jpg" class="card-img-top" alt="тут картинка"></a>
       <div class="card-body">
         <a href="vacation.html">
           <h5 class="card-title">Скоро в отпуск</h5>
         </a>
-        <p class="card-text">Платье из шелка в оранжевом оттенке</p>
+        <p class="card-text">Платье из шелка в оранжевом оттенке свободного силуэта</p>
         <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070599" data-sb-product-name="Платье из шелка"
           data-sb-product-price="5000" data-sb-product-quantity="1" data-sb-product-img="img_resized/171.jpg"
           href="#">Купить</a>
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 21rem;">
       <a href="3.html"><img src="img_resized/622.jpg" class="card-img-top" alt="тут картинка"></a>
       <div class="card-body">
         <a href="patty.html">
-          <h5 class="card-title">Собираемся на вечеринку</h5>
+          <h5 class="card-title">На вечеринку!</h5>
         </a>
         <p class="card-text">Маленькое черное платье облегающего силуэта</p>
 
@@ -125,7 +179,7 @@
     </div>
   </div>
 
-  
+
 
 
   <div class="product-box container d-flex justify-content-between mt-5">
@@ -136,7 +190,7 @@
           <a href="4.html"><img src="img_resized/11.jpg" class="card-img-top" alt="тут картинка"></a>
           <div class="card-body">
             <a href="romantic.html">
-              <h5 class="card-title">Для романтичных встреч</h5>
+              <h5 class="card-title">Романтично</h5>
             </a>
             <p class="card-text">Платье для особых случаев сиреневого оттенка</p>
             <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070502"
@@ -181,7 +235,8 @@
           <a href="7.html"><img src="img_resized/511.jpg" class="card-img-top" alt="тут картинка"></a>
           <div class="card-body">
             <a href="baby.html">
-              <h5 class="card-title">В ожидании чуда</h5></a>
+              <h5 class="card-title">В ожидании чуда</h5>
+            </a>
             <p class="card-text">Свободное платье в шотландскую клетку</p>
             <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070505"
               data-sb-product-name="Платье в клетку" data-sb-product-price="3000" data-sb-product-quantity="1"
@@ -190,142 +245,156 @@
         </div>
       </div>
 
-     
-        <div class="mt-5 row">
-          <div class="col-lg-3">
 
-            <div class="card" , style="width: 18rem; height: 32;">
-              <a href="8.html"><img src="img_resized/231.jpg" class="card-img-top" alt="тут картинка"></a>
-              <div class="card-body">
-                <a href="selebration.html">
-                  <h5 class="card-title">Праздник к нам пришел</h5>
-                </a>
-                <p class="card-text">Платье бархатное в бордовом цвете</p>
-                <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070506"
-                  data-sb-product-name="Платье бархатное" data-sb-product-price="8000" data-sb-product-quantity="1"
-                  data-sb-product-img="img_resized/231.jpg" href="#">Купить</a>
-              </div>
+      <div class="mt-5 row">
+        <div class="col-lg-3">
+
+          <div class="card" , style="width: 18rem; height: 32;">
+            <a href="8.html"><img src="img_resized/231.jpg" class="card-img-top" alt="тут картинка"></a>
+            <div class="card-body">
+              <a href="selebration.html">
+                <h5 class="card-title">Праздник к нам пришел</h5>
+              </a>
+              <p class="card-text">Платье бархатное в бордовом цвете</p>
+              <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070506"
+                data-sb-product-name="Платье бархатное" data-sb-product-price="8000" data-sb-product-quantity="1"
+                data-sb-product-img="img_resized/231.jpg" href="#">Купить</a>
             </div>
           </div>
-
-          <div class="col-lg-3">
-            <div class="card" , style="width: 18rem; height: 32;">
-              <a href="9.html"><img src="img_resized/91.jpg" class="card-img-top" alt="тут картинка"></a>
-              <div class="card-body">
-                <a href="world.html">
-                  <h5 class="card-title">Мир чудесен</h5>
-                </a>
-                <p class="card-text">Платье Marchello в коралловом оттенке</p>
-                <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070507"
-                  data-sb-product-name="Платье Marchello" data-sb-product-price="5700" data-sb-product-quantity="1"
-                  data-sb-product-img="img_resized/91.jpg" href="#">Купить</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card" , style="width: 18rem; height: 32;">
-              <a href="10.html"><img src="img_resized/61.jpg" class="card-img-top" alt="тут картинка"></a>
-              <div class="card-body">
-                <a href="national.html">
-                  <h5 class="card-title">Национальные традиции</h5>
-                </a>
-                <p class="card-text">Нарядное платье с вышивкой для торжества</p>
-                <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070508"
-                  data-sb-product-name="Платье с вышивкой" data-sb-product-price="6200" data-sb-product-quantity="1"
-                  data-sb-product-img="img_resized/61.jpg" href="#">Купить</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card" , style="width: 18rem; height: 32;">
-              <a href="100.html"><img src="img_resized/71.jpg" class="card-img-top" alt="тут картинка"></a>
-              <div class="card-body">
-                <a href="trip.html">
-                  <h5 class="card-title">Весь мир перед нами</h5>
-                </a>
-                <p class="card-text">Платье мини из вискозы с поясом с цветным принтом</p>
-                <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070509"
-                  data-sb-product-name="Платье мини из вискозы" data-sb-product-price="3000"
-                  data-sb-product-quantity="1" data-sb-product-img="img_resized/7.jpg" href="#">Купить</a>
-
-
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <div>
-
         </div>
 
+        <div class="col-lg-3">
+          <div class="card" , style="width: 18rem; height: 32;">
+            <a href="9.html"><img src="img_resized/91.jpg" class="card-img-top" alt="тут картинка"></a>
+            <div class="card-body">
+              <a href="world.html">
+                <h5 class="card-title">Как прекрасен этот мир</h5>
+              </a>
+              <p class="card-text">Платье Marchello в коралловом оттенке</p>
+              <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070507"
+                data-sb-product-name="Платье Marchello" data-sb-product-price="5700" data-sb-product-quantity="1"
+                data-sb-product-img="img_resized/91.jpg" href="#">Купить</a>
+            </div>
+          </div>
+        </div>
 
-        <!-- <div id="specifications">Здесь указаны характеристики</div> -->
+        <div class="col-lg-3">
+          <div class="card" , style="width: 18rem; height: 32;">
+            <a href="10.html"><img src="img_resized/61.jpg" class="card-img-top" alt="тут картинка"></a>
+            <div class="card-body">
+              <a href="national.html">
+                <h5 class="card-title">Национальные традиции</h5>
+              </a>
+              <p class="card-text">Нарядное платье с вышивкой для торжества</p>
+              <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070508"
+                data-sb-product-name="Платье с вышивкой" data-sb-product-price="6200" data-sb-product-quantity="1"
+                data-sb-product-img="img_resized/61.jpg" href="#">Купить</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card" , style="width: 18rem; height: 32;">
+            <a href="100.html"><img src="img_resized/71.jpg" class="card-img-top" alt="тут картинка"></a>
+            <div class="card-body">
+              <a href="trip.html">
+                <h5 class="card-title">Весь мир перед нами</h5>
+              </a>
+              <p class="card-text">Платье мини из вискозы с поясом с цветным принтом</p>
+              <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070509"
+                data-sb-product-name="Платье мини из вискозы" data-sb-product-price="3000" data-sb-product-quantity="1"
+                data-sb-product-img="img_resized/7.jpg" href="#">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-      
-         <!-- <section> -->
-          <div id="specifications"><h2>Музыкальный раздел сайта</h2></div>
 
-        <audio controls src='5.mp3' autoplay='autoplay' loop='loop'></audio><br>
-      <!-- </section> -->
+  <!-- <div id="specifications">Здесь указаны характеристики</div> -->
 
-      <iframe width="760" height="315" src="https://www.youtube.com/embed/5nfJYS63l9U?si=Uu9Q-OpE7bHGoC_Z"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-      <h4 class="card-subtitle">Контакты:</h4>
-      <h4 class="card-list">Телефон: +7(916)888-88-88</h4>
-      <h4 class="card-list">E-mail: <a href="mailto:summer.dress@ya.ru" style="color: #2d322d;">summer.dress@ya.ru</a>
-      </h4>
-      <h4 class="card-text">Адрес: Москва ул.Тверская 41/2 </h4>
+
+  <section class="relax">
+    <div class="h_music">
+      <h2 style="color: rgb(211, 54, 54);">Музыкальный раздел сайта</h2>
+
+
+      <audio class="audio" controls src='5.mp3' autoplay='autoplay' loop='loop'></audio>
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
+    <iframe class="frame_video" src="https://www.youtube.com/embed/5nfJYS63l9U?si=Uu9Q-OpE7bHGoC_Z"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+
+  </section>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
-    <script src="jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+  <script src="jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
 
+  <script src="./smartbasket/js/smartbasket.min.js"></script>
 
+  <script>
+    $(function () {
+      $('.smart-basket__wrapper').smbasket({
+        productElement: 'card',
+        buttonAddToBasket: 'btn-primary',
+        productPrice: '10',
+        productSize: '38',
 
-    <script src="./smartbasket/js/smartbasket.min.js"></script>
+        productQuantityWrapper: 'product__quantity',
+        smartBasketMinArea: 'smart-basket__wrapper',
+        countryCode: '+7',
+        smartBasketCurrency: '₽',
+        smartBasketMinIconPath: './smartbasket/img/22.png',
 
-    <script>
-      $(function () {
-        $('.smart-basket__wrapper').smbasket({
-          productElement: 'card',
-          buttonAddToBasket: 'btn-primary',
-          productPrice: '10',
-          productSize: '38',
-
-          productQuantityWrapper: 'product__quantity',
-          smartBasketMinArea: 'smart-basket__wrapper',
-          countryCode: '+7',
-          smartBasketCurrency: '₽',
-          smartBasketMinIconPath: './smartbasket/img/22.png',
-
-          agreement: {
-            isRequired: true,
-            isChecked: true,
-            isLink: 'https://artstranger.ru/privacy.html',
-          },
-          nameIsRequired: false,
-        });
+        agreement: {
+          isRequired: true,
+          isChecked: true,
+          isLink: 'https://artstranger.ru/privacy.html',
+        },
+        nameIsRequired: false,
       });
-    </script>
+    });
+  </script>
+
+
+  <div class="black_band">
+    <div class="text_brand"> &copy;&nbsp;Контакты:<br>
+      Телефон: +7(916)888-88-88<br>
+      E-mail: womens.stories@ya.ru<br>
+      Адрес: Москва ул.Тверская 88/8 </div>
+
+    <div class="logo">
+      <img class="logo1" src="img/facebook.svg" alt="foto">
+      <img class="logo1" src="img/vk.svg" alt="foto">
+      <img class="logo1" src="img/pinterest.svg" alt="foto">
+      <img class="logo1" src="img/twitter.svg" alt="foto">
+    </div>
+  </div>
+  <!-- 2022 Brand All Rights Reserved. -->
+
+
 </body>
 
 </html>
+
+<!-- <a target="_blank" href="https://icons8.com/icon/13977/vk-com">VK</a> иконка от <a target="_blank" href="https://icons8.com">Icons8</a> -->
