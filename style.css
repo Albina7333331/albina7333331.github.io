@@ -96,17 +96,25 @@ a:active {
   align-items: center;
   flex-direction: row;
 }
-
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.smart-basket__wrapper{
+  padding-right: 10px;
+}
+.user{
+  color: white;
+  padding-right: 10px;
+}
 .audio {
   width: 650px;
 }
 
 .relax {
-
   display: flex;
   justify-content: center;
   /* flex-direction: column; */
-
 }
 
 .frame_video {
@@ -115,19 +123,19 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 50px 50px 20px 50px;
 }
 
 
-.dropdown{
-  width: 250px; 
+.dropdown {
+  width: 250px;
 }
 
 
 .nav-link {
 
   color: white;
-  
+
 }
 
 .card-subtitle {
@@ -136,11 +144,7 @@ a:active {
 
 .btn-primary {
   animation: rotate-scale-up 0.65s linear both;
-
-
 }
-
-
 
 .h1 {
   margin-top: 30px;
@@ -300,15 +304,16 @@ input[type="radio"] {
 
 .header_paragraph {
   font-weight: 700;
-  
+
 }
-.article{
+
+.article {
   margin: 60px;
 }
 
 
 .black_band {
-  height: 179px;
+  height: 199px;
   gap: 0px;
   opacity: 0px;
   display: flex;
@@ -321,10 +326,7 @@ input[type="radio"] {
 .text_brand {
   font-family: Lato;
   font-size: 17px;
-
-  /* line-height: 50px; */
-  /* font-weight: 400; */
-  line-height: 19.2px;
+  /* line-height: 19.2px; */
   text-align: left;
   padding-left: 32px;
   color: #fbfbfb;
@@ -334,6 +336,27 @@ input[type="radio"] {
   width: 100%;
   display: flex;
   justify-content: start;
+}
+
+.text_brand_2 {
+  font-family: Lato;
+  font-size: 17px;
+  /* line-height: 19.2px; */
+  text-align: left;
+  padding-left: 32px;
+  color: #fbfbfb;
+  background: #222224;
+  padding-top: 24px;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  flex-direction: row;
+}
+
+.buyers{
+  color: white;
 }
 
 .logo {
@@ -357,7 +380,4 @@ input[type="radio"] {
   left: 152px;
   gap: 0px;
   opacity: 0px;
-  /* position: top; */
-  /* padding-left: 34px; */
-
 }
