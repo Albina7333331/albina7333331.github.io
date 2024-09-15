@@ -96,51 +96,47 @@ a:active {
   align-items: center;
   flex-direction: row;
 }
-.audio{
+
+.audio {
   width: 650px;
 }
-.relax{
+
+.relax {
 
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 
 }
 
-.h_music{
-  /* padding-top: 50px; */
-  /* padding-left: 100px; */
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  margin: 50px;
-  gap:30px;
-  align-items: center;
-}
-.frame_video{
+.frame_video {
   width: 75vw;
   height: 415px;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 150px;
+  margin: 50px;
 }
 
 
+.dropdown{
+  width: 250px; 
+}
 
 
-
-.nav-link{
+.nav-link {
 
   color: white;
+  
 }
+
 .card-subtitle {
   padding-top: 50px;
 }
 
 .btn-primary {
   animation: rotate-scale-up 0.65s linear both;
-  
+
 
 }
 
@@ -157,7 +153,7 @@ a:active {
   position: relative;
   box-shadow: 1px 3px 10px rgb(228, 243, 11);
 
-} 
+}
 
 
 .card_sale::after {
@@ -174,9 +170,38 @@ a:active {
   position: absolute;
   top: 8px;
   right: 8px;
- 
 }
 
+
+.card::after {
+  content: "Смотреть всё";
+  font-size: 10px;
+  font-style: italic;
+  font-weight: bold;
+  width: 15px;
+  background-color: dark;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+
+
+
+
+
+.h_music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  gap: 30px;
+  align-items: center;
+}
 
 
 
@@ -272,6 +297,15 @@ input[type="radio"] {
 #slide3:checked~.slides {
   transform: translateX(-300%);
 }
+
+.header_paragraph {
+  font-weight: 700;
+  
+}
+.article{
+  margin: 60px;
+}
+
 
 .black_band {
   height: 179px;
