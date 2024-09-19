@@ -1,3 +1,76 @@
+@media (max-width: 768px) {
+  
+  .breadcrumb {
+    background: #F8F3F4;
+    /* height: 148px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 287px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .slider {
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+    /* Ширина слайдера */
+    height: 200px;
+    /* Высота слайдера */
+    margin: auto;
+    overflow: hidden;
+    /* object-fit: cover; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider {
+    height: 100vh;
+
+    /* height: 777px; */
+    position: relative;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slides{
+    height: 100vh;
+
+    /* height: 777px; */
+    position: relative;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.slide{
+  height: 100vh;
+
+    /* height: 777px; */
+    position: relative;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+}
+
+
+
+
+
+
+
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
