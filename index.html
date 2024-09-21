@@ -10,21 +10,22 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Women's stories</title>
   <link rel="stylesheet" href="style.css">
-
-
-
-  
 </head>
 
 <body>
+
+
+
+
+
+
+
+
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="address.html"></a>
+   
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -35,35 +36,26 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Полезное
-            </a>
+              data-bs-toggle="dropdown" aria-expanded="false">Полезное</a>
+
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a href="#part1">Статьи по теме</a></li>
-              <li><a href="#part2">Видео о новинках сезона</a></li>
-              <li><a href="#part3">Музыкальный раздел</a></li>
-
-              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              <li><a class="dropdown-item" href="#part1">Статьи по теме</a></li>
+              <li><a class="dropdown-item" href="#part2">Видео о новинках сезона</a></li>
+              <li><a class="dropdown-item" href="#part3">Релаксирующий раздел</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled"></a>
-          </li>
-        </ul>
+            <div class="head_right">
 
+              <div class="smart-basket__wrapper"></div>
 
-        <div class="user"><img src="img/user.png" alt="user">
-        </div>
-        <div class="smart-basket__wrapper"></div>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
       </div>
     </div>
-
-
   </nav>
+
   <div class="center mt-3 mb-3">
     <p class="h1">women's stories</p>
   </div>
@@ -75,12 +67,7 @@
     </ol>
   </nav>
 
-  
-<script>
-  document.body.style.background = 'red'; // сделать фон красным
 
-  setTimeout(() => document.body.style.background = '', 3000); // вернуть назад
-</script>
 
 
   <div class="slider">
@@ -133,13 +120,12 @@
     nextBtn.addEventListener('click', () => {
       showSlide(currentIndex + 1);
     });
-
   </script>
 
 
   <div class="product-box container d-flex justify-content-between mt-5">
 
-    <div class="card" style="width: 21rem; height: 38;">
+    <div class="card" style="width: 19rem; height: 33;">
       <a href="1.html"><img src="img_resized/141.jpg" class="card-img-top" alt="тут картинка"></a>
       <div class="card-body">
         <a href="senior.html">
@@ -152,7 +138,7 @@
       </div>
     </div>
 
-    <div class="card_sale" style="width: 21rem; height: 38;">
+    <div class="card_sale" style="width: 19rem; height: 33;">
       <a href="2.html"><img src="img_resized/171.jpg" class="card-img-top" alt="тут картинка"></a>
       <div class="card-body">
         <a href="vacation.html">
@@ -165,7 +151,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 21rem; height: 38;">
+    <div class="card" style="width: 19rem; height: 33;">
       <a href="3.html"><img src="img_resized/622.jpg" class="card-img-top" alt="тут картинка"></a>
       <div class="card-body">
         <a href="patty.html">
@@ -178,145 +164,160 @@
           data-sb-product-img="img_resized/622.jpg" href="#">Купить</a>
       </div>
     </div>
-  </div>
 
 
 
-
-  <div class="product-box container d-flex justify-content-between mt-5">
-
-    <div class="mt-5 row">
-      <div class="col-lg-3">
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="4.html"><img src="img_resized/11.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="romantic.html">
-              <h5 class="card-title">Романтично</h5>
-            </a>
-            <p class="card-text">Платье для особых случаев сиреневого оттенка</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070502"
-              data-sb-product-name="Платье сиреневого оттенка" data-sb-product-price="7000" data-sb-product-quantity="1"
-              data-sb-product-img="img_resized/11.jpg" href="#">Купить</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3">
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="5.html"><img src="img_resized/22.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="concert.html">
-              <h5 class="card-title">Идем на концерт</h5>
-            </a>
-            <p class="card-text">Платье Vivian серо-серебристого оттенка</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070503" data-sb-product-name="Платье Vivian"
-              data-sb-product-price="5300" data-sb-product-quantity="1" data-sb-product-img="img_resized/20.jpg"
-              href="#">Купить</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3">
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="6.html"><img src="img_resized/33.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="wedding.html">
-              <h5 class="card-title">Главный день</h5>
-            </a>
-            <p class="card-text">Платье свадебное из кружева с фигурным силуэтом</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070504"
-              data-sb-product-name="Платье свадебное" data-sb-product-price="9000" data-sb-product-quantity="1"
-              data-sb-product-img="img_resized/33.jpg" href="#">Купить</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3">
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="7.html"><img src="img_resized/511.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="baby.html">
-              <h5 class="card-title">В ожидании чуда</h5>
-            </a>
-            <p class="card-text">Свободное платье в шотландскую клетку</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070505"
-              data-sb-product-name="Платье в клетку" data-sb-product-price="3000" data-sb-product-quantity="1"
-              data-sb-product-img="img_resized/50.jpg" href="#">Купить</a>
-          </div>
-        </div>
+    <div class="card" style="width: 19rem; height: 33;">
+      <a href="1.html"><img src="img_resized/141.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="senior.html">
+          <h5 class="card-title">У нас выпускной</h5>
+        </a>
+        <p class="card-text">Платье макси с фигурным силуэтом в алом цвете</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070500" data-sb-product-name="Платье макси"
+          data-sb-product-price="5500" data-sb-product-quantity="1" data-sb-product-img="img_resized/141.jpg"
+          href="#">Купить</a>
       </div>
     </div>
 
 
+
+
+
+    <!-- <div class="product-box container d-flex justify-content-between mt-5">
+
     <div class="mt-5 row">
-      <div class="col-lg-3">
-
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="8.html"><img src="img_resized/231.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="selebration.html">
-              <h5 class="card-title">Праздник к нам пришел</h5>
-            </a>
-            <p class="card-text">Платье бархатное в бордовом цвете</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070506"
-              data-sb-product-name="Платье бархатное" data-sb-product-price="8000" data-sb-product-quantity="1"
-              data-sb-product-img="img_resized/231.jpg" href="#">Купить</a>
-          </div>
-        </div>
+      <div class="col-lg-3"> -->
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="4.html"><img src="img_resized/11.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="romantic.html">
+          <h5 class="card-title">Романтично</h5>
+        </a>
+        <p class="card-text">Платье для особых случаев сиреневого оттенка</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070502"
+          data-sb-product-name="Платье сиреневого оттенка" data-sb-product-price="7000" data-sb-product-quantity="1"
+          data-sb-product-img="img_resized/11.jpg" href="#">Купить</a>
       </div>
+    </div>
+    <!-- </div> -->
 
-      <div class="col-lg-3">
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="9.html"><img src="img_resized/91.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="world.html">
-              <h5 class="card-title">Как прекрасен этот мир</h5>
-            </a>
-            <p class="card-text">Платье Marchello в коралловом оттенке</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070507"
-              data-sb-product-name="Платье Marchello" data-sb-product-price="5700" data-sb-product-quantity="1"
-              data-sb-product-img="img_resized/91.jpg" href="#">Купить</a>
-          </div>
-        </div>
+    <!-- <div class="col-lg-3"> -->
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="5.html"><img src="img_resized/22.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="concert.html">
+          <h5 class="card-title">Идем на концерт</h5>
+        </a>
+        <p class="card-text">Платье Vivian серо-серебристого оттенка</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070503" data-sb-product-name="Платье Vivian"
+          data-sb-product-price="5300" data-sb-product-quantity="1" data-sb-product-img="img_resized/20.jpg"
+          href="#">Купить</a>
       </div>
+    </div>
+    <!-- </div> -->
 
-      <div class="col-lg-3">
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="10.html"><img src="img_resized/61.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="national.html">
-              <h5 class="card-title">Национальные традиции</h5>
-            </a>
-            <p class="card-text">Нарядное платье с вышивкой для торжества</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070508"
-              data-sb-product-name="Платье с вышивкой" data-sb-product-price="6200" data-sb-product-quantity="1"
-              data-sb-product-img="img_resized/61.jpg" href="#">Купить</a>
-          </div>
-        </div>
+    <!-- <div class="col-lg-3"> -->
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="6.html"><img src="img_resized/33.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="wedding.html">
+          <h5 class="card-title">Главный день</h5>
+        </a>
+        <p class="card-text">Платье свадебное из кружева с фигурным силуэтом</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070504" data-sb-product-name="Платье свадебное"
+          data-sb-product-price="9000" data-sb-product-quantity="1" data-sb-product-img="img_resized/33.jpg"
+          href="#">Купить</a>
       </div>
+    </div>
+    <!-- </div> -->
 
-      <div class="col-lg-3">
-        <div class="card" , style="width: 19rem; height: 33;">
-          <a href="100.html"><img src="img_resized/71.jpg" class="card-img-top" alt="тут картинка"></a>
-          <div class="card-body">
-            <a href="trip.html">
-              <h5 class="card-title">Горы манят и зовут в поход</h5>
-            </a>
-            <p class="card-text">Платье мини из вискозы с поясом с цветным принтом</p>
-            <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070509"
-              data-sb-product-name="Платье мини из вискозы" data-sb-product-price="3000" data-sb-product-quantity="1"
-              data-sb-product-img="img_resized/7.jpg" href="#">Купить</a>
-          </div>
-        </div>
+    <!-- <div class="col-lg-3"> -->
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="7.html"><img src="img_resized/511.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="baby.html">
+          <h5 class="card-title">В ожидании чуда</h5>
+        </a>
+        <p class="card-text">Свободное платье в шотландскую клетку</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070505" data-sb-product-name="Платье в клетку"
+          data-sb-product-price="3000" data-sb-product-quantity="1" data-sb-product-img="img_resized/50.jpg"
+          href="#">Купить</a>
+      </div>
+    </div>
+    <!-- </div>
+  </div> -->
+
+
+    <!-- <div class="mt-5 row">
+    <div class="col-lg-3"> -->
+
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="8.html"><img src="img_resized/231.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="selebration.html">
+          <h5 class="card-title">Праздник к нам пришел</h5>
+        </a>
+        <p class="card-text">Платье бархатное в бордовом цвете</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070506" data-sb-product-name="Платье бархатное"
+          data-sb-product-price="8000" data-sb-product-quantity="1" data-sb-product-img="img_resized/231.jpg"
+          href="#">Купить</a>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="col-lg-3"> -->
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="9.html"><img src="img_resized/91.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="world.html">
+          <h5 class="card-title">Как прекрасен этот мир</h5>
+        </a>
+        <p class="card-text">Платье Marchello в коралловом оттенке</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070507" data-sb-product-name="Платье Marchello"
+          data-sb-product-price="5700" data-sb-product-quantity="1" data-sb-product-img="img_resized/91.jpg"
+          href="#">Купить</a>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="col-lg-3"> -->
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="10.html"><img src="img_resized/61.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="national.html">
+          <h5 class="card-title">Национальные традиции</h5>
+        </a>
+        <p class="card-text">Нарядное платье с вышивкой для торжества</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070508" data-sb-product-name="Платье с вышивкой"
+          data-sb-product-price="6200" data-sb-product-quantity="1" data-sb-product-img="img_resized/61.jpg"
+          href="#">Купить</a>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="col-lg-3"> -->
+    <div class="card" , style="width: 19rem; height: 33;">
+      <a href="100.html"><img src="img_resized/71.jpg" class="card-img-top" alt="тут картинка"></a>
+      <div class="card-body">
+        <a href="trip.html">
+          <h5 class="card-title">Горы манят и зовут в поход</h5>
+        </a>
+        <p class="card-text">Платье мини из вискозы с поясом с цветным принтом</p>
+        <a href="#" class="btn-primary" data-sb-id-or-vendor-code="4226070509"
+          data-sb-product-name="Платье мини из вискозы" data-sb-product-price="3000" data-sb-product-quantity="1"
+          data-sb-product-img="img_resized/7.jpg" href="#">Купить</a>
       </div>
     </div>
   </div>
+  <!-- </div>
+  </div>
+  </div> -->
 
 
   <section class="relax">
 
-    <iframe id="part2" class="frame_video" src="img/видео.mp4"
-      title="YouTube video player" frameborder="0"
+    <iframe id="part2" class="frame_video" src="img/видео.mp4" title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
@@ -335,7 +336,8 @@
       силуэты и чистые линии
       сочетаются с акцентами на скульптурные детали. Это могут быть необычные вырезы, асимметрия, драпировки и
       геометрические формы, которые добавляют платьям элегантности и современности. Минималистичные платья выполнены в
-      сдержанной цветовой гамме: белый, черный, пастельные тона, но с акцентами на текстуру ткани — шелк, атлас, креп и
+      сдержанной цветовой гамме: белый, черный, пастельные тона, но с акцентами на текстуру ткани — шелк, атлас, креп
+      и
       мягкий трикотаж.</p>
 
     <h6 class="header_paragraph">2. Прозрачность и слои</h6>
@@ -347,7 +349,8 @@
       платья.</p>
 
     <h6 class="header_paragraph">3. Ретро-стилизация: возвращение 90-х и 70-х</h6>
-    <p class="text_article">Мода 90-х и 70-х годов остаётся вдохновением для дизайнеров 2024 года. Из 90-х возвращаются
+    <p class="text_article">Мода 90-х и 70-х годов остаётся вдохновением для дизайнеров 2024 года. Из 90-х
+      возвращаются
       платья-комбинации на
       тонких бретелях, которые идеально подходят для повседневного и вечернего образа. Лаконичные фасоны из атласа или
       бархата выглядят элегантно и актуально. Платья в стиле 70-х — это цветочные принты, широкие рукава, а также
@@ -356,7 +359,8 @@
       высокой талией и длиной макси, создающие бохо-образ.</p>
 
     <h6 class="header_paragraph">4. Цветочные мотивы и ботанические принты</h6>
-    <p class="text_article">Цветочные узоры остаются вечной классикой, но в 2024 году они становятся более графичными и
+    <p class="text_article">Цветочные узоры остаются вечной классикой, но в 2024 году они становятся более графичными
+      и
       выразительными.
       Большие
       и смелые принты, выполненные в насыщенных тонах, придают платьям динамичный и современный вид. Особенно
@@ -376,7 +380,8 @@
       текстурированными тканями и сложными фасонами.</p>
 
     <h6 class="header_paragraph">6. Эко-мода и устойчивые материалы</h6>
-    <p class="text_article">С каждым годом мода становится всё более осознанной, и в 2024 году это заметно как никогда.
+    <p class="text_article">С каждым годом мода становится всё более осознанной, и в 2024 году это заметно как
+      никогда.
       Многие дизайнеры
       обращаются к использованию устойчивых материалов, таких как органический хлопок, переработанный полиэстер, лен и
       бамбук. Платья из натуральных тканей в спокойных, приглушённых оттенках привлекают внимание своим комфортом и
@@ -429,7 +434,7 @@
     <h2 style="color: rgb(211, 54, 54);">Музыкальный раздел сайта</h2>
     <audio controls src='5.mp3' autoplay='autoplay' loop='loop'></audio>
   </div>
-  
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->

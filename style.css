@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  
+
   .breadcrumb {
     background: #F8F3F4;
     /* height: 148px; */
@@ -7,6 +7,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .content {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +21,7 @@
   .slider {
     /* position: relative; */
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     /* Ширина слайдера */
     height: 200px;
     /* Высота слайдера */
@@ -31,7 +32,9 @@
     justify-content: center;
   }
 
-  .slider {
+
+
+  .slides {
     height: 100vh;
 
     /* height: 777px; */
@@ -42,7 +45,7 @@
     align-items: center;
   }
 
-  .slides{
+  .slide {
     height: 100vh;
 
     /* height: 777px; */
@@ -52,17 +55,15 @@
     justify-content: center;
     align-items: center;
   }
-.slide{
-  height: 100vh;
 
-    /* height: 777px; */
-    position: relative;
-    background: #f7f7f7;
+  .frame_video {
+    width: 19rem;
+    height: 33;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-  
+    justify-content: center;
+    margin: 50px 50px 20px 50px;
+  }
 }
 
 
@@ -133,6 +134,11 @@ a:active {
 
 }
 
+.head_right{
+display: flex;
+justify-content: end;
+
+}
 .card-body {
   background-color: hsl(174, 56%, 96%);
 }
@@ -164,22 +170,30 @@ a:active {
 }
 
 .product-box {
-  gap: 31px;
+  gap: 41px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
 }
-.container{
+
+.container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.smart-basket__wrapper{
-  padding-right: 10px;
+
+.smart-basket__wrapper {
+  /* padding-right: 5px; */
+  width: 70px;
+  height: 5px;
 }
-.user{
+
+.user {
   color: white;
   padding-right: 10px;
 }
+
 .audio {
   width: 650px;
 }
@@ -196,9 +210,22 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 50px 20px 50px;  
+  margin: 50px 50px 20px 50px;
 }
 
+.slider {
+  position: relative;
+  width: 100vw;
+  /* height: 100vh; */
+  /* Ширина слайдера */
+  height: 50vh;
+  /* Высота слайдера */
+  margin: auto;
+  overflow: hidden;
+  /* object-fit: cover; */
+  display: flex;
+  justify-content: center;
+}
 
 .dropdown {
   width: 250px;
@@ -276,7 +303,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   margin: 20px;
-  gap: 30px;
+  /* gap: 30px; */
   align-items: center;
 }
 
@@ -293,6 +320,12 @@ a:active {
   cursor: pointer;
   z-index: 10;
 }
+
+
+  /* picSlider.style.transition = "transform 500ms ease-out";
+  picSlider.style.transform = "translateX(-100px)"; // подвинет влево */
+
+/* } */
 
 .navigation .prev {
   left: 10px;
@@ -324,22 +357,11 @@ a:active {
   display: none;
 }
 
-.slider {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  /* Ширина слайдера */
-  height: 400px;
-  /* Высота слайдера */
-  margin: auto;
-  overflow: hidden;
-  /* object-fit: cover; */
-}
 
 .slides {
   display: flex;
-  width: 50vw;
-  height: 80vh;
+  width: 100vw;
+  height: 110vh;
   transition: all 0.5s ease-in-out;
 }
 
@@ -349,8 +371,8 @@ a:active {
 }
 
 .slide img {
-  width: 50vw;
-  height: 60vh;
+  width: 100vw;
+  height: 110vh;
   object-fit: cover;
 }
 
@@ -381,7 +403,11 @@ input[type="radio"] {
 }
 
 .article {
-  margin: 60px;
+  /* margin: 60px; */
+  display: flex;
+  justify-content: flex;
+  flex-wrap: wrap;
+  margin: 40px;
 }
 
 
@@ -392,7 +418,7 @@ input[type="radio"] {
   display: flex;
   width: 100%;
   padding-top: 50px;
-  display: flex;
+
 
 }
 
@@ -415,20 +441,21 @@ input[type="radio"] {
   font-family: Lato;
   font-size: 17px;
   /* line-height: 19.2px; */
-  text-align: left;
-  padding-left: 32px;
+  /* text-align: left; */
+  /* padding-left: 32px; */
   color: #fbfbfb;
   background: #222224;
   padding-top: 24px;
   gap: 10px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
   line-height: 1.5;
-  flex-direction: row;
+  /* flex-direction: ; */
+  /* align-items: center; */
 }
 
-.buyers{
+.buyers {
   color: white;
 }
 
@@ -456,7 +483,7 @@ input[type="radio"] {
 }
 
 
-.header__checkbox:checked ~ .mobile-menu {
+.header__checkbox:checked~.mobile-menu {
   right: 0;
 }
 
