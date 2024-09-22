@@ -19,36 +19,25 @@
   }
 
   .slider {
-    /* position: relative; */
     width: 100vw;
-    /* height: 100vh; */
-    /* Ширина слайдера */
     height: 200px;
-    /* Высота слайдера */
     margin: auto;
     overflow: hidden;
-    /* object-fit: cover; */
     display: flex;
     justify-content: center;
   }
 
-
-
-  .slides {
+  /* .slides {
     height: 100vh;
-
-    /* height: 777px; */
     position: relative;
     background: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   .slide {
     height: 100vh;
-
-    /* height: 777px; */
     position: relative;
     background: #f7f7f7;
     display: flex;
@@ -64,8 +53,24 @@
     justify-content: center;
     margin: 50px 50px 20px 50px;
   }
-}
 
+  .text_brand {
+    font-family: Lato;
+    font-size: 14px;
+    padding-left: 22px;
+  }
+
+  .text_brand_2 {
+    font-family: Lato;
+    font-size: 14px;
+  }
+
+
+  .black_band {
+    height: 199px;
+  }
+
+}
 
 
 
@@ -134,26 +139,38 @@ a:active {
 
 }
 
-.head_right{
-display: flex;
-justify-content: end;
+.head_right {
+  display: flex;
+  justify-content: end;
 
 }
+
 .card-body {
   background-color: hsl(174, 56%, 96%);
 }
 
+.navbar {
+
+  display: flex;
+  flex-direction: column;
+}
 
 .card-title {
   font-size: 25px;
   font-style: italic;
   font-weight: bold;
-
 }
+
+
+
 
 .h1 {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+
+  /* justify-content: space-evenly; */
 }
 
 .text-color {
@@ -179,8 +196,8 @@ justify-content: end;
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .smart-basket__wrapper {
@@ -276,7 +293,7 @@ justify-content: end;
   right: 8px;
 }
 
-
+/* 
 .card::after {
   content: "Смотреть всё";
   font-size: 10px;
@@ -291,7 +308,7 @@ justify-content: end;
   position: absolute;
   top: 8px;
   right: 8px;
-}
+} */
 
 
 
@@ -322,7 +339,7 @@ justify-content: end;
 }
 
 
-  /* picSlider.style.transition = "transform 500ms ease-out";
+/* picSlider.style.transition = "transform 500ms ease-out";
   picSlider.style.transform = "translateX(-100px)"; // подвинет влево */
 
 /* } */
@@ -362,7 +379,7 @@ justify-content: end;
   display: flex;
   width: 100vw;
   height: 110vh;
-  transition: all 0.5s ease-in-out;
+  transition: all 5.0 s ease-in-out;
 }
 
 .slide {
@@ -470,7 +487,7 @@ input[type="radio"] {
   padding-top: 52px;
   padding-bottom: 23px;
   width: 100%;
-  padding-right: 50px;
+  padding-right: 100px;
 }
 
 .logo1 {
