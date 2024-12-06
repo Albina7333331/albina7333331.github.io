@@ -11,14 +11,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <title>Women's stories</title>
   <link rel="stylesheet" href="style.css">
- 
 
+  <script src="script.js"></script>
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
+
+
+      <button onclick="showAddReviewPage()">Добавить отзыв</button>
+      <button onclick="showViewReviewsPage()">Просмотр отзывов</button>
+
+
 
       <!-- 
       <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
@@ -49,7 +55,8 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
 
-          <div class="user"><a class="user_list" href="registrashion/registrashion.html"><img src="img/user.png" alt="user"></a></div>
+          <div class="user"><a class="user_list" href="registrashion/registrashion.html"><img src="img/user.png"
+                alt="user"></a></div>
         </div>
         <!-- </div> -->
     </div>
@@ -440,6 +447,14 @@
 
   </div>
 
+  <div id="content">
+    <!-- Содержимое страницы будет загружаться сюда -->
+  </div>
+
+
+
+
+
 
   <div id="part3" class="h_music">
     <h2 style="color: rgb(211, 54, 54);">Музыкальный раздел сайта</h2>
@@ -487,7 +502,7 @@
     -->
 
   <script src="jquery-3.7.1.min.js"></script>
-  <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+  <link rel="stylesheet" href="./smartbasket/css/smartbasket.min.css">
 
   <script src="./smartbasket/js/smartbasket.min.js"></script>
 
@@ -508,15 +523,15 @@
         agreement: {
           isRequired: true,
           isChecked: true,
-          isLink: 'https://artstranger.ru/privacy.html',
+          isLink: 'https://artstranger.ru/privacy.html'
         },
-        nameIsRequired: false,
+        nameIsRequired: false
       });
     });
   </script>
 
 
- 
+
   <!-- 2022 Brand All Rights Reserved. -->
 
 
