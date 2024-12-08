@@ -66,4 +66,11 @@ body {
     border: none;
     cursor: pointer;
   }
-  
+  review{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 40px;
+    padding: auto;
+    background-color: #333;
+  }
