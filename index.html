@@ -54,6 +54,70 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
 
+
+          <script>
+            function displayResults(results) {
+              const resultsDiv = document.getElementById('results');
+              resultsDiv.innerHTML = '';
+
+
+              const visibleResults = results.slice(0, 1000);
+
+              visibleResults.forEach(person => {
+                const personElement = document.createElement('div');
+                personElement.textContent = `${person.surname} ${person.name} ${person.papaname ? person.papaname : ''} ${person.level ? '(' + person.level + ')' : ''} - ${person.telnumber}`;
+                resultsDiv.appendChild(personElement);
+              });
+            }
+
+
+            displayResults(data);
+            document.getElementById('search').addEventListener('input', function (e) {
+              const searchQuery = e.target.value.toLowerCase();
+
+              if (!searchQuery) {
+
+                displayResults(data);
+              } else {
+                const filteredData = data.filter(person => {
+                  return (
+                    person.surname.toLowerCase().includes(searchQuery) ||
+                    person.name.toLowerCase().includes(searchQuery) ||
+                    (person.papaname && person.papaname.toLowerCase().includes(searchQuery)) ||
+                    person.telnumber.includes(searchQuery) ||
+                    (person.level && person.level.toLowerCase().includes(searchQuery))
+                  );
+                });
+
+                if (filteredData.length > 0) {
+                  displayResults(filteredData);
+                } else {
+                  document.getElementById('results').textContent = 'Нет результатов';
+                }
+              }
+            });
+
+
+
+            const data = [
+              { "surname": "4226070500", "name": "1.html" },
+              { "surname": "4226070501", "name": "2.html" }
+            ];
+
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div class="user"><a class="user_list" href="registrashion/registrashion.html"><img src="img/user.png"
                 alt="user"></a></div>
         </div>
@@ -65,7 +129,7 @@
 
         <form action="rev1.html" target="_blank">
           <button>Добавить отзыв</button>
-         </form>
+        </form>
 
 
 
@@ -76,6 +140,16 @@
 
 
   </nav>
+
+
+
+
+
+
+
+
+
+
 
   <div class="center mt-3 mb-3">
     <p class="h1 centre">women's stories</p>
